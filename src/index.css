@@ -1,0 +1,44 @@
+@import url("https://fonts.cdnfonts.com/css/bebas-neue");
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Condensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Condensed Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Condensed Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+:root {
+  font-family: "Helvetica Neue", sans-serif;
+  font-stretch: condensed;
+  color: black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@theme {
+  --color-primary: #f6cc15;
+  --font-sans: "Helvetica Neue", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-text-color: #121212;
+}
