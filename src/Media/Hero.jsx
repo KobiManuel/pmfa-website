@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="bg-white py-[34.38px]">
       <div className="max-w-[1440px] mx-auto w-[90%] flex h-full items-center">
-        <div className="w-1/2">
+        <div className="w-1/2 max-[1000px]:w-full">
           <SectionHeader
             eyebrow="See Our Work"
             title={

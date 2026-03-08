@@ -44,9 +44,9 @@ const programs = [
 
 const Hero = () => {
   return (
-    <section className="bg-white py-[80.33px]">
-      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-[17.43px] h-full">
-        <div className="w-1/2">
+    <section className="bg-white py-[80.33px] max-[768px]:py-12 max-[480px]:py-8">
+      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-[17.43px] h-full max-[600px]:w-[92%]">
+        <div className="w-1/2 max-[1000px]:w-full">
           <SectionHeader
             eyebrow="What We Offer"
             title={
@@ -59,16 +59,16 @@ const Hero = () => {
             descriptionClassName={"!text-[16px] !leading-[28px]"}
           />
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 max-[1350px]:gap-4 max-[768px]:grid-cols-1 max-[480px]:gap-3">
           {programs.map(({ tags, title, description }, i) => (
             <div
               key={i}
-              className="border-[#DFDFDF] border-[1.07px] rounded-[5.23px] bg-[#FBFBFB] flex flex-col h-[411.43px]"
+              className="border-[#DFDFDF] border-[1.07px] rounded-[5.23px] bg-[#FBFBFB] flex flex-col h-[411.43px] max-[1350px]:h-[380px] max-[1000px]:h-[360px] max-[768px]:h-auto"
             >
-              <div className="py-[44.79px] bg-[#F3F3F3] pl-[5%]">
+              <div className="py-[44.79px] bg-[#F3F3F3] pl-[5%] max-[1350px]:py-8 max-[768px]:py-6">
                 <Icon.TargetOutlinedGrey />
               </div>
-              <div className="flex flex-col gap-[18.26px] bg-[#FBFBFB] px-[5%] h-full justify-center">
+              <div className="flex flex-col gap-[18.26px] bg-[#FBFBFB] px-[5%] h-full justify-center py-5 max-[480px]:gap-3">
                 <div className="flex items-center gap-[8.34px]">
                   {tags.map((tag, j) => (
                     <div
@@ -79,11 +79,11 @@ const Hero = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex flex-col gap-[17.19px]">
-                  <p className="text-[21.48px] leading-[22.56px] font-bold text-text-color">
+                <div className="flex flex-col gap-[17.19px] max-[480px]:gap-3">
+                  <p className="text-[21.48px] leading-[22.56px] font-bold text-text-color max-[1350px]:text-[19px] max-[1000px]:text-[17px] max-[480px]:text-[15px] max-[480px]:leading-[20px]">
                     {title}
                   </p>
-                  <p className="text-[12.89px] leading-[22.56px] text-text-color font-inter">
+                  <p className="text-[12.89px] leading-[22.56px] text-text-color font-inter max-[480px]:text-[12px] max-[480px]:leading-[20px]">
                     {description}
                   </p>
                   <Link

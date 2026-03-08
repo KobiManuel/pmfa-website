@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="bg-[#F3F3F3] h-[calc(100vh-242px)]">
       <div className="max-w-[1440px] mx-auto w-[90%] flex h-full items-center">
-        <div className="w-1/2">
+        <div className="w-1/2 max-[1000px]:w-full">
           <SectionHeader
             eyebrow="About PMF"
             title={

@@ -56,14 +56,14 @@ const Navbar = () => {
 
       {/* Main navbar */}
       <div className="h-[101px] bg-[#F6F6F6] flex items-center justify-center relative z-50">
-        <div className="flex justify-between items-center w-[90%] mx-auto">
+        <div className="flex justify-between items-center w-[90%] mx-auto max-w-[1440px]">
           <div className="flex items-center gap-[13.53px]">
-            <Icon.Logo />
-            <div className="gap-2 flex flex-col">
-              <p className="font-bold text-[30.96px] leading-[30.96px]">
+            <Icon.Logo className="max-[800px]:w-10! max-[800px]:h-10! " />
+            <div className="gap-2 flex flex-col max-[800px]:gap-0">
+              <p className="font-bold text-[30.96px] leading-[30.96px]  max-[800px]:text-xl">
                 PMF Academy
               </p>
-              <p className="font-bold text-[12.9px] tracking-[25%] leading-[12.9px]">
+              <p className="font-bold text-[12.9px] tracking-[25%] leading-[12.9px] max-[800px]:-mt-1">
                 Play More Football
               </p>
             </div>

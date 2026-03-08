@@ -18,7 +18,7 @@ const Main = () => {
             variant: "solid",
           },
         ]}
-        className={"pt-[112.55px]!"}
+        className={"min-[1350px]:pt-[112.55px]!"}
       />
     </>
   );

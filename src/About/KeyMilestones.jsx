@@ -37,10 +37,10 @@ const milestones = [
 
 const KeyMilestones = () => {
   return (
-    <section className="bg-white py-[52px]">
-      <div className="max-w-[1440px] mx-auto w-[85%] flex items-center justify-between gap-[87.44px] *:w-1/2">
+    <section className="bg-white py-[52px] max-[768px]:py-10 max-[480px]:py-8">
+      <div className="max-w-[1440px] mx-auto w-[85%] flex items-center justify-between gap-[87.44px] *:w-1/2 max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-10 max-[600px]:w-[92%]">
         {/* Left — timeline */}
-        <div className="flex flex-col gap-[42.82px]">
+        <div className="flex flex-col gap-[42.82px] max-[600px]:gap-8">
           <SectionHeader
             eyebrow="Our Journey"
             title={
@@ -58,17 +58,17 @@ const KeyMilestones = () => {
             {milestones.map((m, i) => (
               <div
                 key={i}
-                className="relative flex gap-[28px] pb-[40px] last:pb-0"
+                className="relative flex gap-[28px] pb-[40px] last:pb-0 max-[480px]:gap-5 max-[480px]:pb-8"
               >
                 {/* Dot */}
                 <div className="relative z-10 mt-[9px] w-[11px] h-[11px] shrink-0 rounded-full bg-[#A3A3A3]" />
 
                 {/* Content */}
                 <div className="flex flex-col">
-                  <p className="text-[16px] leading-[33px] font-medium tracking-[21%] text-text-color uppercase">
+                  <p className="text-[16px] leading-[33px] font-medium tracking-[21%] text-text-color uppercase max-[480px]:text-[13px] max-[480px]:leading-[28px]">
                     {m.date}
                   </p>
-                  <p className="font-bold text-[24px] leading-[33px]  text-text-color">
+                  <p className="font-bold text-[24px] leading-[33px] text-text-color max-[1350px]:text-[20px] max-[480px]:text-[17px] max-[480px]:leading-[26px]">
                     {m.title}
                   </p>
                   <p className="font-inter text-[11px] leading-[21px] text-text-color">
@@ -81,7 +81,7 @@ const KeyMilestones = () => {
         </div>
 
         {/* Right — image */}
-        <div className="rounded-2xl overflow-hidden h-full">
+        <div className="rounded-2xl overflow-hidden h-full max-[1000px]:max-h-[500px] max-[600px]:max-h-[380px] max-[480px]:max-h-[280px]">
           <img
             src={placeholderImage}
             alt="Key Milestones"

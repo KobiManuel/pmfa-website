@@ -25,7 +25,7 @@ import f234 from "../assets/images/Frame 234.png";
 const Gallery = () => {
   return (
     <section className="bg-[#F6F6F6] pt-[43.38px] pb-[121.35px]">
-      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-6">
+      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-6 max-[800px]:gap-2">
         <SectionHeader
           eyebrow="Photo Gallery"
           title={
@@ -35,11 +35,13 @@ const Gallery = () => {
             </>
           }
           description="Ajegunle Tournament, January 24th 2026 — 200+ children, 16 schools."
-          descriptionClassName={"!text-[16px] !leading-[28px]"}
+          descriptionClassName={
+            "min-[1350px]:!text-[16px] min-[1350px]:!leading-[28px]"
+          }
         />
 
         {/* Row 1: large left, two stacked right */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
           <div className="flex-2">
             <img
               loading="lazy"
@@ -48,7 +50,7 @@ const Gallery = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-1 flex flex-col gap-6">
+          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f216}
@@ -65,7 +67,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 2: three equal */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
           <img
             loading="lazy"
             src={f218}
@@ -87,8 +89,8 @@ const Gallery = () => {
         </div>
 
         {/* Row 3: small left stacked, large right */}
-        <div className="flex gap-6">
-          <div className="flex-1 flex flex-col gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
+          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f221}
@@ -113,7 +115,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 4: three equal */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
           <img
             loading="lazy"
             src={f225}
@@ -135,7 +137,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 5: large left, two stacked right */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
           <div className="flex-2">
             <img
               loading="lazy"
@@ -144,7 +146,7 @@ const Gallery = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-1 flex flex-col gap-6">
+          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f229}
@@ -161,7 +163,7 @@ const Gallery = () => {
         </div>
 
         {/* Row 6: two equal */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
           <img
             loading="lazy"
             src={f231}
@@ -177,8 +179,8 @@ const Gallery = () => {
         </div>
 
         {/* Row 7: small left stacked, large right */}
-        <div className="flex gap-6">
-          <div className="flex-1 flex flex-col gap-6">
+        <div className="flex gap-6 max-[800px]:gap-2">
+          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f228}
