@@ -1,6 +1,7 @@
 import React from "react";
 import heroBanner from "../assets/images/hero-banner.png";
 import { useEffect, useRef, useState } from "react";
+import bannerVideo from "../assets/landing-video.MP4";
 
 const useCountUp = (target, duration = 2000, isVisible) => {
   const [count, setCount] = useState(0);
@@ -58,11 +59,18 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <div
-        className="w-100% min-[1350px]:h-[1053.98px] bg-cover bg-center bg-no-repeat flex items-end min-h-[calc(100vh-242px)] max-[1000px]:min-h-[calc(100vh-101px)]"
-        style={{ backgroundImage: `url(${heroBanner})` }}
-      >
-        <div className="max-w-[1440px] w-[90%] mx-auto flex items-end justify-between pb-[44.37px] max-[1000px]:flex-col max-[1000px]:items-start max-[1000px]:gap-8 max-[1000px]:pb-8 max-[600px]:pb-6 max-[600px]:w-[92%]">
+      <div className="relative w-full min-[1350px]:h-[1053.98px] flex items-end min-h-[calc(100vh-242px)] max-[1000px]:min-h-[calc(100vh-101px)] overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={bannerVideo} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 max-w-[1440px] w-[90%] mx-auto flex items-end justify-between pb-[44.37px] max-[1000px]:flex-col max-[1000px]:items-start max-[1000px]:gap-8 max-[1000px]:pb-8 max-[600px]:pb-6 max-[600px]:w-[92%]">
           {/* Left / Main Text Block */}
           <div className="max-w-[70%] max-[1350px]:max-w-[60%] max-[1000px]:max-w-full max-[1000px]:w-full">
             {/* Badge */}

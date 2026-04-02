@@ -2,6 +2,10 @@ import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Icon } from "../components/Icon";
 import { Link } from "react-router-dom";
+import f224 from "../assets/images/Frame 234.png";
+import f231 from "../assets/images/Frame 231.png";
+import f232 from "../assets/images/Frame 224.png";
+import programsBanner from "../assets/images/programs-banner.png";
 
 const programs = [
   {
@@ -45,8 +49,8 @@ const programs = [
 const Hero = () => {
   return (
     <section className="bg-white py-[80.33px] max-[768px]:py-12 max-[480px]:py-8">
-      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-[17.43px] h-full max-[600px]:w-[92%]">
-        <div className="w-1/2 max-[1000px]:w-full">
+      <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-[57.43px] h-full max-[600px]:w-[92%]">
+        <div className="*:w-1/2 max-[1000px]:w-full flex justify-between items-center gap-[64.99px] max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-[30px]">
           <SectionHeader
             eyebrow="What We Offer"
             title={
@@ -58,6 +62,13 @@ const Hero = () => {
             description="We provide structured programmes, community-based training, and accessible opportunities that help children learn, play, and grow on and off the pitch. Football becomes a tool for social change, youth development, and lifelong opportunity."
             descriptionClassName={"!text-[16px] !leading-[28px]"}
           />
+          <div className="rounded-2xl overflow-hidden h-full">
+            <img
+              src={programsBanner}
+              alt="PMF Programs"
+              className="w-full h-full object-cover rounded-2xl max-[1000px]:min-h-[384px]"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-6 max-[1350px]:gap-4 max-[768px]:grid-cols-1 max-[480px]:gap-3">
           {programs.map(({ tags, title, description }, i) => (
@@ -96,6 +107,25 @@ const Hero = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex flex-col gap-6 max-[1350px]:gap-4 max-[480px]:gap-3 mt-2">
+          <img
+            src={f224}
+            alt=""
+            className="w-full h-[880px] max-[1000px]:h-[360px] max-[600px]:h-[260px] max-[480px]:h-[200px] object-cover rounded-[5.23px]"
+          />
+          <div className="flex gap-6 max-[1350px]:gap-4 max-[480px]:gap-3">
+            <img
+              src={f231}
+              alt=""
+              className="flex-1 min-w-0 h-[480px] max-[1000px]:h-[280px] max-[600px]:h-[200px] max-[480px]:h-[160px] object-cover rounded-[5.23px]"
+            />
+            <img
+              src={f232}
+              alt=""
+              className="flex-1 min-w-0 h-[480px] max-[1000px]:h-[280px] max-[600px]:h-[200px] max-[480px]:h-[160px] object-cover rounded-[5.23px]"
+            />
+          </div>
         </div>
       </div>
     </section>

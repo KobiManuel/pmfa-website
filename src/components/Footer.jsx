@@ -15,10 +15,10 @@ const Footer = () => {
             <div className="flex items-center gap-[13.53px]">
               <Icon.Logo className="max-[1350px]:w-[52px] max-[1350px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px]" />
               <div className="gap-2 flex flex-col">
-                <p className="font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
+                <p className="uppercase font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
                   PMF Academy
                 </p>
-                <p className="font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]">
+                <p className="uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]">
                   Play More Football
                 </p>
               </div>
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="flex justify-between items-center w-full max-[768px]:flex-col max-[768px]:items-start max-[768px]:gap-5 max-[480px]:gap-4">
           <p className="text-[#6E6E6E] text-[16px] leading-[28px] font-inter max-[480px]:text-[13px] max-[480px]:leading-[22px]">
             © 2026 PMF Academy. All rights reserved. Registered in Nigeria. |
-            info@pmfacademy.org
+            info@pmfacademy.play
           </p>
           <div className="flex items-center gap-[30.17px] max-[480px]:gap-5">
             <a href={SOCIAL_HREF} target="_blank" rel="noopener noreferrer">

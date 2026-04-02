@@ -48,7 +48,7 @@ const Navbar = () => {
               ⭐ PMFA STAR PLAYER OF THE SEASON
             </p>
           </div>
-          <p className="font-bold text-base tracking-[20%]">
+          <p className="font-bold text-base tracking-[20%] uppercase">
             2026 SEASON · Presented by 9ja Energy Drink{" "}
           </p>
         </div>
@@ -60,10 +60,10 @@ const Navbar = () => {
           <div className="flex items-center gap-[13.53px]">
             <Icon.Logo className="max-[800px]:w-10! max-[800px]:h-10! " />
             <div className="gap-2 flex flex-col max-[800px]:gap-0">
-              <p className="font-bold text-[30.96px] leading-[30.96px]  max-[800px]:text-xl">
+              <p className=" uppercase font-bold text-[30.96px] leading-[30.96px]  max-[800px]:text-xl">
                 PMF Academy
               </p>
-              <p className="font-bold text-[12.9px] tracking-[25%] leading-[12.9px] max-[800px]:-mt-1">
+              <p className="uppercase font-bold text-[12.9px] tracking-[25%] leading-[12.9px] max-[800px]:-mt-1">
                 Play More Football
               </p>
             </div>

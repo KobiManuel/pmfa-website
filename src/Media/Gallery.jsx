@@ -41,8 +41,8 @@ const Gallery = () => {
         />
 
         {/* Row 1: large left, two stacked right */}
-        <div className="flex gap-6 max-[800px]:gap-2">
-          <div className="flex-2">
+        <div className="flex gap-6 max-[800px]:gap-2 h-[440px] max-[800px]:h-[280px]">
+          <div className="flex-[2] min-w-0">
             <img
               loading="lazy"
               src={f215}
@@ -50,18 +50,18 @@ const Gallery = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
+          <div className="flex-1 min-w-0 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f216}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
             <img
               loading="lazy"
               src={f217}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
           </div>
         </div>
@@ -72,39 +72,39 @@ const Gallery = () => {
             loading="lazy"
             src={f218}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
           <img
             loading="lazy"
             src={f219}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
           <img
             loading="lazy"
             src={f220}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
         </div>
 
         {/* Row 3: small left stacked, large right */}
-        <div className="flex gap-6 max-[800px]:gap-2">
-          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
+        <div className="flex gap-6 max-[800px]:gap-2 h-[440px] max-[800px]:h-[280px]">
+          <div className="flex-1 min-w-0 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f221}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
             <img
               loading="lazy"
               src={f224}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
           </div>
-          <div className="flex-2">
+          <div className="flex-[2] min-w-0">
             <img
               loading="lazy"
               src={f222}
@@ -120,25 +120,25 @@ const Gallery = () => {
             loading="lazy"
             src={f225}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
           <img
             loading="lazy"
             src={f226}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
           <img
             loading="lazy"
             src={f223}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
         </div>
 
         {/* Row 5: large left, two stacked right */}
-        <div className="flex gap-6 max-[800px]:gap-2">
-          <div className="flex-2">
+        <div className="flex gap-6 max-[800px]:gap-2 h-[440px] max-[800px]:h-[280px]">
+          <div className="flex-[2] min-w-0">
             <img
               loading="lazy"
               src={f227}
@@ -146,18 +146,18 @@ const Gallery = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
+          <div className="flex-1 min-w-0 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f229}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
             <img
               loading="lazy"
               src={f230}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
           </div>
         </div>
@@ -168,33 +168,33 @@ const Gallery = () => {
             loading="lazy"
             src={f231}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
           <img
             loading="lazy"
             src={f232}
             alt=""
-            className="flex-1 object-cover h-[220px]"
+            className="flex-1 min-w-0 object-cover h-[220px] max-[800px]:h-[120px]"
           />
         </div>
 
         {/* Row 7: small left stacked, large right */}
-        <div className="flex gap-6 max-[800px]:gap-2">
-          <div className="flex-1 flex flex-col gap-6 max-[800px]:gap-2">
+        <div className="flex gap-6 max-[800px]:gap-2 h-[440px] max-[800px]:h-[280px]">
+          <div className="flex-1 min-w-0 flex flex-col gap-6 max-[800px]:gap-2">
             <img
               loading="lazy"
               src={f228}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
             <img
               loading="lazy"
               src={f233}
               alt=""
-              className="w-full h-1/2 object-cover"
+              className="w-full flex-1 object-cover min-h-0"
             />
           </div>
-          <div className="flex-2">
+          <div className="flex-[2] min-w-0">
             <img
               loading="lazy"
               src={f234}
