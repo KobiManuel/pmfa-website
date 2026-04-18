@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         {/* Main navbar */}
-        <div className="h-[101px] bg-[#F6F6F6] flex items-center justify-centershadow-2xl">
+        <div className="h-[101px] bg-[#F6F6F6] flex items-center justify-center shadow-2xl">
           <div className="flex justify-between items-center w-[90%] mx-auto max-w-[1440px]">
             <div className="flex items-center gap-[13.53px]">
               {pathname === "/foundation" ? (
