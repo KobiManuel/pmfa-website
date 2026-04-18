@@ -96,15 +96,18 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-4 max-[480px]:flex-col max-[480px]:gap-3 max-[480px]:w-full">
-              <Link to={"/programs"}>
-                <button className="uppercase border border-white text-white cursor-pointer rounded-[4px] bg-transparent h-[57px] w-[200px] text-[16px] leading-4 font-bold underline max-[768px]:h-[48px] max-[768px]:w-[170px] max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px]">
-                  Explore Programs
-                </button>
+              <Link
+                to={"/programs"}
+                className="flex items-center justify-center uppercase border border-white text-white cursor-pointer rounded-[4px] bg-transparent h-[57px] w-[200px] text-[16px] leading-4 font-bold underline max-[768px]:h-[48px] max-[768px]:w-[170px] max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px]"
+              >
+                Explore Programs
               </Link>
-              <Link to={"/foundation"}>
-                <button className="uppercase cursor-pointer rounded-[4px] bg-primary h-[57px] w-[200px] text-[16px] leading-4 font-bold underline max-[768px]:h-[48px] max-[768px]:w-[170px] max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px]">
-                  Join 2026 Intake
-                </button>
+
+              <Link
+                to={"/foundation"}
+                className="flex items-center justify-center uppercase cursor-pointer rounded-[4px] bg-primary h-[57px] w-[200px] text-[16px] leading-4 font-bold underline max-[768px]:h-[48px] max-[768px]:w-[170px] max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px]"
+              >
+                Join 2026 Intake
               </Link>
             </div>
           </div>
