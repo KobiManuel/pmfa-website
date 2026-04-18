@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="flex justify-between items-center w-full max-[768px]:flex-col max-[768px]:items-start max-[768px]:gap-5 max-[480px]:gap-4">
           <p className="text-[#6E6E6E] text-[16px] leading-[28px] font-inter max-[480px]:text-[13px] max-[480px]:leading-[22px]">
             © 2026 PMF Academy. All rights reserved. Registered in Nigeria. |
-            info@pmfacademy.play
+            info@pmfa.club
           </p>
           <div className="flex items-center gap-[30.17px] max-[480px]:gap-5">
             <a href={SOCIAL_HREF} target="_blank" rel="noopener noreferrer">

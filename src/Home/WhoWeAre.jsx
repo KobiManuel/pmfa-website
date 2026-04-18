@@ -43,9 +43,9 @@ const WhoWeAre = () => {
             believe football is more than a sport — it is a pathway to
             education, empowerment, and a brighter future.
           </p>
-          <button className="uppercase cursor-pointer rounded-[4px] bg-primary h-[68.11px] w-[243.23px] text-[19.46px] leading-[19.46px] font-bold max-[1350px]:h-[56px] max-[1350px]:w-[210px] max-[1350px]:text-[17px] max-[768px]:h-[48px] max-[768px]:w-[180px] max-[768px]:text-[15px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:text-[14px]">
+          {/* <button className="uppercase cursor-pointer rounded-[4px] bg-primary h-[68.11px] w-[243.23px] text-[19.46px] leading-[19.46px] font-bold max-[1350px]:h-[56px] max-[1350px]:w-[210px] max-[1350px]:text-[17px] max-[768px]:h-[48px] max-[768px]:w-[180px] max-[768px]:text-[15px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:text-[14px]">
             Our story
-          </button>
+          </button> */}
         </div>
 
         {/* Cards Grid */}
