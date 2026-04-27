@@ -4,7 +4,7 @@ import aboutBanner from "../assets/images/about-banner.png";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F3F3F3] h-[calc(100vh-242px)] max-[1000px]:h-fit">
+    <section className="min-[1000px]:pt-[200px] max-[1000px]:pt-10 pb-10 bg-[#F3F3F3] max-[1000px]:h-fit">
       <div className="max-w-[1440px] mx-auto w-[90%] flex h-full items-center">
         <div className="*:w-1/2 max-[1000px]:w-full flex justify-between items-center gap-[64.99px] max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-[30px]">
           <SectionHeader

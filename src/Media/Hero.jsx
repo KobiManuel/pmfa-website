@@ -3,7 +3,7 @@ import SectionHeader from "../components/SectionHeader";
 
 const Hero = () => {
   return (
-    <section className="bg-white py-[34.38px]">
+    <section className="min-[1000px]:pt-[200px] max-[1000px]:pt-10 bg-white py-[34.38px]">
       <div className="max-w-[1440px] mx-auto w-[90%] flex h-full items-center">
         <div className="w-1/2 max-[1000px]:w-full">
           <SectionHeader

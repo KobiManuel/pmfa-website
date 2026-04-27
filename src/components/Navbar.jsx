@@ -1,13 +1,27 @@
 import React, { useEffect, useRef, useState } from "react";
 import face from "../assets/images/player-face.png";
 import { Icon } from "./Icon";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import MenuIcon from "../components/MenuIcon/MenuIcon";
 
 const Navbar = () => {
   const { pathname } = useLocation();
   const [menuActive, setMenuActive] = useState(false);
   const bannerRef = useRef(null);
+
+  const navigation = useNavigate();
+
+  const handleSupportClick = () => {
+    if (pathname === "/foundation") {
+      // Already on the page, just scroll
+      document
+        .getElementById("support")
+        ?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate to foundation, pass scroll target via state
+      navigation("/foundation", { state: { scrollTo: "support" } });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,14 +94,19 @@ const Navbar = () => {
               {pathname === "/foundation" ? (
                 <Icon.FoundationLogo className="max-[800px]:w-10! max-[800px]:h-10!" />
               ) : (
-                <Icon.Logo className="max-[800px]:w-10! max-[800px]:h-10!" />
+                <Link to="/">
+                  <Icon.Logo className="max-[800px]:w-10! max-[800px]:h-10!" />
+                </Link>
               )}
               <div className="gap-2 flex flex-col max-[800px]:gap-0">
                 <p className="uppercase font-bold text-[30.96px] leading-[30.96px] max-[800px]:text-xl">
-                  PMF Academy
+                  PMF {pathname === "/foundation" ? "Foundation" : "Academy"}
                 </p>
-                <p className="uppercase font-bold text-[12.9px] tracking-[25%] leading-[12.9px] max-[800px]:-mt-1">
-                  Play More Football
+                <p
+                  className={`uppercase font-bold  tracking-[25%] leading-[12.9px] max-[800px]:-mt-1 ${pathname === "/foundation" ? "text-[10px]" : "text-[12.9px]"}`}
+                >
+                  Play More Football{" "}
+                  {pathname === "/foundation" ? "Foundation" : ""}
                 </p>
               </div>
             </div>
@@ -122,12 +141,12 @@ const Navbar = () => {
                   );
                 })}
               </ul>
-              <Link
-                to={"/foundation"}
+              <button
+                onClick={handleSupportClick}
                 className="flex items-center justify-center cursor-pointer rounded-[4px] bg-primary h-[57px] w-[177px] text-[16px] leading-4 font-bold"
               >
                 SUPPORT US
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -178,7 +197,13 @@ const Navbar = () => {
               transition: `transform 300ms ease ${navLinks.length * 50}ms, opacity 300ms ease ${navLinks.length * 50}ms`,
             }}
           >
-            <button className="cursor-pointer rounded-[4px] bg-primary w-full h-[57px] text-[16px] leading-4 font-bold underline">
+            <button
+              onClick={() => {
+                setMenuActive(false);
+                handleSupportClick();
+              }}
+              className="cursor-pointer rounded-[4px] bg-primary w-full h-[57px] text-[16px] leading-4 font-bold underline"
+            >
               SUPPORT US
             </button>
           </div>

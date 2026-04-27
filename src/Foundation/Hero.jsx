@@ -4,7 +4,7 @@ import heroBanner from "../assets/images/foundation-banner.png";
 const Hero = () => {
   return (
     <div
-      className="w-100% min-[1350px]:h-[1053.98px] bg-cover bg-center bg-no-repeat flex items-end min-h-[calc(100vh-242px)] max-[1000px]:min-h-[calc(100vh-101px)]"
+      className="min-[1000px]:mt-[100px] max-[1000px]:pt-10 w-100% min-[1350px]:h-[1053.98px] bg-cover bg-center bg-no-repeat flex items-end min-h-[calc(100vh-242px)] max-[1000px]:min-h-[calc(100vh-101px)]"
       style={{ backgroundImage: `url(${heroBanner})` }}
     >
       <div className="max-w-[1440px] w-[90%] mx-auto flex items-end justify-between pb-[44.37px] max-[1000px]:pb-8 max-[600px]:pb-6 max-[600px]:w-[92%]">
@@ -36,7 +36,9 @@ const Hero = () => {
               Donate Now
             </button>
             <a
-              href="mailto:info@tpmffoundation.com"
+              href={"https://forms.gle/UR7TFfPjQE7CHjjM9"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center     uppercase cursor-pointer rounded-[4px] bg-primary h-[57px] w-[200px] text-[16px] leading-4 font-bold max-[768px]:h-[48px] max-[768px]:w-[170px] max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px]"
             >
               Become a Sponsor

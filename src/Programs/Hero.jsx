@@ -48,7 +48,7 @@ const programs = [
 
 const Hero = () => {
   return (
-    <section className="bg-white py-[80.33px] max-[768px]:py-12 max-[480px]:py-8">
+    <section className="min-[1000px]:pt-[200px] max-[1000px]:pt-10 bg-white py-[80.33px] max-[768px]:py-12 max-[480px]:py-8">
       <div className="max-w-[1440px] mx-auto w-[90%] flex flex-col gap-[57.43px] h-full max-[600px]:w-[92%]">
         <div className="*:w-1/2 max-[1000px]:w-full flex justify-between items-center gap-[64.99px] max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-[30px]">
           <SectionHeader

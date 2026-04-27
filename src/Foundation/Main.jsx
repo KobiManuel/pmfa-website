@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./Hero";
 import YourImpact from "./YourImpact";
 import FooterBanner from "../components/FooterBanner";
 import SupportSection from "./SupportSection";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const { state, pathname } = useLocation();
+
+  const navigation = useNavigate();
+
+  const handleSupportClick = () => {
+    console.log("clickeddd");
+    if (pathname === "/foundation") {
+      // Already on the page, just scroll
+      document
+        .getElementById("support")
+        ?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate to foundation, pass scroll target via state
+      navigation("/foundation", { state: { scrollTo: "support" } });
+    }
+  };
+
+  useEffect(() => {
+    if (state?.scrollTo) {
+      // Small timeout lets the page render before scrolling
+      const timeout = setTimeout(() => {
+        document
+          .getElementById(state.scrollTo)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, [state]);
   return (
     <>
       <Hero />
@@ -16,7 +45,7 @@ const Main = () => {
         buttons={[
           {
             label: "Contact Our Partnerships Team",
-            href: "/",
+            onClick: handleSupportClick,
             variant: "solid",
           },
         ]}

@@ -25,19 +25,33 @@ const FooterBanner = ({
         </p>
         {buttons.length > 0 && (
           <div className="flex items-center gap-[15px] justify-center max-[480px]:flex-col max-[480px]:w-full max-[480px]:gap-3">
-            {buttons.map(({ label, to, variant = "solid" }, i) => (
-              <Link
-                key={i}
-                to={to}
-                className={`h-[56px] uppercase font-bold px-[53px] flex items-center justify-center rounded-[4px] text-[16px] leading-[16px] max-[1350px]:h-[50px] max-[1350px]:px-10 max-[1350px]:text-[15px] max-[768px]:h-[46px] max-[768px]:px-8 max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:px-6 max-[480px]:text-[13px] ${
-                  variant === "solid"
-                    ? "bg-black text-white"
-                    : "bg-transparent border-[3px] border-[#333333] text-black"
-                } ${underline && "underline"}`}
-              >
-                {label}
-              </Link>
-            ))}
+            {buttons.map(({ label, to, onClick, variant = "solid" }, i) =>
+              to ? (
+                <Link
+                  key={i}
+                  to={to}
+                  className={`h-[56px] uppercase font-bold px-[53px] flex items-center justify-center rounded-[4px] text-[16px] leading-[16px] max-[1350px]:h-[50px] max-[1350px]:px-10 max-[1350px]:text-[15px] max-[768px]:h-[46px] max-[768px]:px-8 max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:px-6 max-[480px]:text-[13px] ${
+                    variant === "solid"
+                      ? "bg-black text-white"
+                      : "bg-transparent border-[3px] border-[#333333] text-black"
+                  } ${underline && "underline"}`}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <button
+                  key={i}
+                  onClick={onClick}
+                  className={`cursor-pointer h-[56px] uppercase font-bold px-[53px] flex items-center justify-center rounded-[4px] text-[16px] leading-[16px] max-[1350px]:h-[50px] max-[1350px]:px-10 max-[1350px]:text-[15px] max-[768px]:h-[46px] max-[768px]:px-8 max-[768px]:text-[14px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:px-6 max-[480px]:text-[13px] ${
+                    variant === "solid"
+                      ? "bg-black text-white"
+                      : "bg-transparent border-[3px] border-[#333333] text-black"
+                  } ${underline && "underline"}`}
+                >
+                  {label}
+                </button>
+              ),
+            )}
           </div>
         )}
       </div>

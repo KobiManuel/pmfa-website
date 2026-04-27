@@ -186,10 +186,7 @@ const SupportSection = () => {
         />
       )}
 
-      <section
-        id="support"
-        className="pt-[70px] pb-[66.66px] max-[768px]:pt-10 max-[768px]:pb-12 max-[480px]:pt-8 max-[480px]:pb-10"
-      >
+      <section className="pt-[70px] pb-[66.66px] max-[768px]:pt-10 max-[768px]:pb-12 max-[480px]:pt-8 max-[480px]:pb-10">
         <div className="max-w-[1440px] w-[90%] mx-auto  flex  items-start max-[1000px]:flex-col *:w-1/2! gap-[87.93px] max-[1000px]:*:w-full!">
           {/* ── Left Panel ── */}
           <div className="flex-1 flex flex-col justify-center gap-8 mt-[59.83px] max-[1000px]:mt-0">
@@ -243,7 +240,10 @@ const SupportSection = () => {
           </div>
 
           {/* ── Right Panel — Donation Form ── */}
-          <div className="max-[1000px]:w-full bg-[#F8F8F8] border-[0.92px] border-[#D5D5D5] rounded-[7.92px] flex flex-col p-[46px] max-[800px]:p-6">
+          <div
+            id="support"
+            className="max-[1000px]:w-full bg-[#F8F8F8] border-[0.92px] border-[#D5D5D5] rounded-[7.92px] flex flex-col p-[46px] max-[800px]:p-6"
+          >
             {/* Form header */}
             <div className="flex flex-col gap-[10.82px]">
               <h3 className="font-extrabold text-[21.16px] leading-[18.4px] text-text-color -tracking-[2%]">

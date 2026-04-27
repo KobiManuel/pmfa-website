@@ -1,11 +1,14 @@
 import React from "react";
 import { Icon } from "./Icon";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const SOCIAL_HREF =
   "https://www.instagram.com/playmorefootballafrica?igsh=MWdxamE2bWNoMHZ5aA==";
 
 const Footer = () => {
+  const { pathname } = useLocation();
+  const isFoundation = pathname === "/foundation";
+
   return (
     <footer className="bg-black pt-[62.54px] pb-[33.67px] flex justify-center items-center max-[768px]:pt-10 max-[480px]:pt-8">
       <div className="max-w-[1440px] mx-auto w-[80%] flex flex-col gap-[40.85px] justify-between items-center max-[1000px]:w-[90%] max-[600px]:w-[92%] max-[600px]:gap-8">
@@ -13,17 +16,26 @@ const Footer = () => {
           {/* Brand Block */}
           <div className="flex flex-col gap-[21.09px] max-w-[35%] max-[1000px]:max-w-full">
             <div className="flex items-center gap-[13.53px]">
-              <Icon.Logo className="max-[1350px]:w-[52px] max-[1350px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px]" />
+              {isFoundation ? (
+                <Icon.FooterFoundationLogo className="max-[800px]:w-10! max-[800px]:h-10!" />
+              ) : (
+                <Link to="/">
+                  <Icon.Logo className="max-[1350px]:w-[52px] max-[1350px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px]" />
+                </Link>
+              )}
               <div className="gap-2 flex flex-col">
                 <p className="uppercase font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
                   PMF Academy
                 </p>
-                <p className="uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]">
-                  Play More Football
+                <p
+                  className={`uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]  ${pathname === "/foundation" && "text-[10px]! leading-[12.9px]!  max-[768px]:text-[8px]! max-[768px]:leading-[12px]"}`}
+                >
+                  Play More Football{" "}
+                  {pathname === "/foundation" ? "Foundation" : ""}{" "}
                 </p>
               </div>
             </div>
-            <p className="font-inter text-[16px] leading-[28px] text-white max-[1000px]:max-w-[480px]">
+            <p className="font-inter text-[16px] leading-[28px] text-white max-[1000px]:max-w-[480px] max-[768px]:!text-sm">
               A pioneering grassroots initiative committed to discovering,
               nurturing, and empowering young football talent across Africa.
             </p>
@@ -100,8 +112,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex justify-between items-center w-full max-[768px]:flex-col max-[768px]:items-start max-[768px]:gap-5 max-[480px]:gap-4">
           <p className="text-[#6E6E6E] text-[16px] leading-[28px] font-inter max-[480px]:text-[13px] max-[480px]:leading-[22px]">
-            © 2026 PMF Academy. All rights reserved. Registered in Nigeria. |
-            info@tpmffoundation.com
+            © 2026 PMF Academy. All rights reserved. Registered in Nigeria. |{" "}
+            {isFoundation ? "info@tpmffoundation.com" : "info@pmfa.club"}
           </p>
           <div className="flex items-center gap-[30.17px] max-[480px]:gap-5">
             <a href={SOCIAL_HREF} target="_blank" rel="noopener noreferrer">
