@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "../components/Icon";
 import Video1 from "../assets/Video 1.png";
+import videoSrc from "../assets/videos/c19cf948-81ad-4778-b494-4f49093efe99.mp4";
 
 const AboutPMFF = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (isPlaying && videoRef.current) {
+      videoRef.current.play();
+    }
+  }, [isPlaying]);
+
   return (
     <section className="w-full bg-[#F6F6F6] py-[80px] max-[1000px]:py-14 max-[480px]:py-10">
       <div className="max-w-[1440px] mx-auto w-[90%] max-[600px]:w-[92%] flex gap-[64px] items-stretch max-[1000px]:flex-col max-[1000px]:gap-10">
@@ -71,12 +81,29 @@ const AboutPMFF = () => {
         {/* Right — video thumbnail */}
         <div className="flex-1 self-stretch max-[1000px]:w-full max-[1000px]:h-[400px] max-[600px]:h-[280px] max-[480px]:h-[220px]">
           <div className="relative w-full h-full rounded-[12px] overflow-hidden min-h-[500px] max-[1000px]:min-h-0">
-            <img
-              src={Video1}
-              alt="PMFF in action"
-              className="w-full h-full object-cover"
-            />
-            {/* Play button */}
+            {isPlaying ? (
+              <video
+                ref={videoRef}
+                src={videoSrc}
+                controls
+                playsInline
+                className="w-full h-full object-cover"
+                onEnded={() => setIsPlaying(false)}
+              />
+            ) : (
+              <button
+                type="button"
+                onClick={() => setIsPlaying(true)}
+                className="block w-full h-full cursor-pointer"
+                aria-label="Play PMFF in action"
+              >
+                <img
+                  src={Video1}
+                  alt="PMFF in action"
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            )}
           </div>
         </div>
       </div>

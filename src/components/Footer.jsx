@@ -8,6 +8,7 @@ const SOCIAL_HREF =
 const Footer = () => {
   const { pathname } = useLocation();
   const isFoundation = pathname === "/foundation";
+  const isProject2029 = pathname === "/project-2029";
 
   return (
     <footer className="bg-black pt-[62.54px] pb-[33.67px] flex justify-center items-center max-[768px]:pt-10 max-[480px]:pt-8">
@@ -18,22 +19,29 @@ const Footer = () => {
             <div className="flex items-center gap-[13.53px]">
               {isFoundation ? (
                 <Icon.FooterFoundationLogo className="max-[800px]:w-10! max-[800px]:h-10!" />
+              ) : isProject2029 ? (
+                <Icon.Project2029FooterLog className="max-[1350px]:w-[52px] max-[1350px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px]" />
               ) : (
                 <Link to="/">
                   <Icon.Logo className="max-[1350px]:w-[52px] max-[1350px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px]" />
                 </Link>
               )}
-              <div className="gap-2 flex flex-col">
+              {isProject2029 ? (
                 <p className="uppercase font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
-                  PMF Academy
+                  PROJECT 2029
                 </p>
-                <p
-                  className={`uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]  ${pathname === "/foundation" && "text-[10px]! leading-[12.9px]!  max-[768px]:text-[8px]! max-[768px]:leading-[12px]"}`}
-                >
-                  Play More Football{" "}
-                  {pathname === "/foundation" ? "Foundation" : ""}{" "}
-                </p>
-              </div>
+              ) : (
+                <div className="gap-2 flex flex-col">
+                  <p className="uppercase font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
+                    PMF Academy
+                  </p>
+                  <p
+                    className={`uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]  ${isFoundation && "text-[10px]! leading-[12.9px]!  max-[768px]:text-[8px]! max-[768px]:leading-[12px]"}`}
+                  >
+                    Play More Football {isFoundation ? "Foundation" : ""}{" "}
+                  </p>
+                </div>
+              )}
             </div>
             <p className="font-inter text-[16px] leading-[28px] text-white max-[1000px]:max-w-[480px] max-[768px]:!text-sm">
               A pioneering grassroots initiative committed to discovering,
@@ -69,13 +77,20 @@ const Footer = () => {
                 Company
               </p>
               {[
-                { label: "Our Impact", to: "/" },
-                { label: "Careers", to: "/" },
-                { label: "Media Kit", to: "/" },
-                { label: "Privacy Policy", to: "/" },
-                { label: "Partners", to: "/" },
-              ].map(({ label, to }) => (
-                <li key={label}>
+                { label: "Our Impact", to: "/", hidden: true },
+                { label: "Careers", to: "/", hidden: true },
+                { label: "Media Kit", to: "/", hidden: true },
+                { label: "Privacy Policy", to: "/", hidden: true },
+                { label: "Partners", to: "/", hidden: true },
+              ].map(({ label, to, hidden }) => (
+                <li
+                  key={label}
+                  style={
+                    hidden
+                      ? { visibility: "hidden", pointerEvents: "none" }
+                      : {}
+                  }
+                >
                   <Link
                     to={to}
                     className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
@@ -90,13 +105,20 @@ const Footer = () => {
                 Resources
               </p>
               {[
-                { label: "Scout Portal", to: "/" },
-                { label: "Coach Portal", to: "/" },
-                { label: "Parent Guide", to: "/" },
-                { label: "Training Schedule", to: "/" },
-                { label: "Contact Us", to: "/" },
-              ].map(({ label, to }) => (
-                <li key={label}>
+                { label: "Scout Portal", to: "/", hidden: true },
+                { label: "Coach Portal", to: "/", hidden: true },
+                { label: "Parent Guide", to: "/", hidden: true },
+                { label: "Training Schedule", to: "/", hidden: true },
+                { label: "Contact Us", to: "/", hidden: true },
+              ].map(({ label, to, hidden }) => (
+                <li
+                  key={label}
+                  style={
+                    hidden
+                      ? { visibility: "hidden", pointerEvents: "none" }
+                      : {}
+                  }
+                >
                   <Link
                     to={to}
                     className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"

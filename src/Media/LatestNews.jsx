@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
-import { Link } from "react-router-dom";
 
 const articles = [
   {
@@ -9,7 +8,7 @@ const articles = [
     title: "PMF Launches Ajegunle Tournament — 200 Children Compete",
     description:
       "Play More Football Foundation hosts its inaugural community tournament, bringing together over 200 children from 16 schools across the Ajegunle area of Lagos.",
-    href: "",
+    href: "https://newstap.com.ng/play-more-football-foundation-takes-over-ajegunle/",
   },
   {
     day: "10",
@@ -18,7 +17,7 @@ const articles = [
       "PMF Calls for Greater Investment in Grassroots Football Development",
     description:
       "The Founder of Play More Football Foundation, Lawrence Okonji, has called on the Nigerian government to intensify efforts toward grassroots football development following the national under-20 team's recent 4–0 defeat to Argentina.",
-    href: "",
+    href: "https://ifm923.com/play-more-football-foundation-calls-for-greater-investment-in-grassroots-football-development/",
   },
   {
     day: "10",
@@ -27,7 +26,7 @@ const articles = [
       "UEFA and FIFA license Coach Lawrence Okonji calls on Government to invest in grassroot sports",
     description:
       "Play More Football Foundation Urges Nigerian Government to Prioritise Grassroots Football Development.",
-    href: "",
+    href: "https://radionigerialagos.gov.ng/press-release/",
   },
   {
     day: "24",
@@ -36,7 +35,7 @@ const articles = [
       "Play More Football Foundation Urges Nigerian Government to Prioritize Grassroots Football Development",
     description:
       "Mr. Okonji emphasized that one of the major reasons behind the founding of the Play More Football Foundation is to bridge the gap in grassroots training and nurture young talent across the country.",
-    href: "",
+    href: "https://www.completesports.com/play-more-football-foundation-urges-nigerian-government-to-prioritize-grassroots-football-development/",
   },
   {
     day: "11",
@@ -45,7 +44,7 @@ const articles = [
       "The Guardian: Foundation urges government to prioritize grassroots sports",
     description:
       "Following the poor performance of Nigeria's national under-20 football team in the recent match against Argentina, which ended 4–0,",
-    href: "",
+    href: "https://guardian.ng/sport/foundation-urges-government-to-prioritize-grassroots-sports/",
   },
   {
     day: "25",
@@ -53,7 +52,7 @@ const articles = [
     title: "Play More Football Foundation Takes Over Ajegunle.",
     description:
       "Ajegunle came alive on January 24th, 2026, as over 200 children from 16 schools gathered for the Play More Football (PMF) Tournament.",
-    href: "",
+    href: "https://radionigerialagos.gov.ng/play-more-football-foundation-takes-over-ajegunle/",
   },
   {
     day: "24",
@@ -61,7 +60,7 @@ const articles = [
     title: "PMF Launches Ajegunle Tournament — 200 Children Compete",
     description:
       "Play More Football Foundation hosts its inaugural community tournament, bringing together over 200 children from 16 schools across the Ajegunle area of Lagos.",
-    href: "",
+    href: "https://memonewsng.wordpress.com/2026/01/25/play-more-foundation-takes-over-ajegunle-memonews-duch-tv-africa-products/",
   },
   {
     day: "24",
@@ -70,7 +69,41 @@ const articles = [
       "PMF Calls for Greater Investment in Grassroots Football Development",
     description:
       "Play More Football Foundation hosts its inaugural community tournament, bringing together over 200 children from 16 schools across the Ajegunle area of Lagos.",
-    href: "",
+    href: "https://hottestgistnow.blogspot.com/2026/01/play-more-football-foundation-takes.html",
+  },
+  {
+    day: "24",
+    month: "Jan '26",
+    title: "PMF empowers youths through grassroots football",
+    description:
+      "Play More Football Foundation is empowering young people across Nigeria through structured grassroots football programmes, community tournaments, and talent development initiatives.",
+    href: "https://punchng.com/pmf-empowers-youths-through-grassroots-football/",
+  },
+  {
+    day: "11",
+    month: "Oct '25",
+    title: "Foundation urges government to prioritize grassroots sports",
+    description:
+      "Following the poor performance of Nigeria's national under-20 football team in the recent match against Argentina, which ended 4–0,",
+    href: "https://guardian.ng/sport/foundation-urges-government-to-prioritize-grassroots-sports/",
+  },
+  {
+    day: "10",
+    month: "Oct '25",
+    title:
+      "Play More Football Foundation Calls for Greater Investment in Grassroots Football Development",
+    description:
+      "The Founder of Play More Football Foundation, Lawrence Okonji, has called on the Nigerian government to intensify efforts toward grassroots football development following the national under-20 team's recent 4–0 defeat to Argentina.",
+    href: "https://ifm923.com/play-more-football-foundation-calls-for-greater-investment-in-grassroots-football-development/",
+  },
+  {
+    day: "24",
+    month: "Jan '26",
+    title:
+      "Play More Football Foundation Urges Nigerian Government to Prioritize Grassroots Football Development",
+    description:
+      "Mr. Okonji emphasized that one of the major reasons behind the founding of the Play More Football Foundation is to bridge the gap in grassroots training and nurture young talent across the country.",
+    href: "https://www.completesports.com/play-more-football-foundation-urges-nigerian-government-to-prioritize-grassroots-football-development/",
   },
 ];
 

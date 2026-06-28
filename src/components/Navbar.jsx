@@ -42,6 +42,7 @@ const Navbar = () => {
     { label: "About", to: "/about" },
     { label: "Programs", to: "/programs" },
     { label: "Media", to: "/media" },
+    { label: "Project 2029", to: "/project-2029" },
     { label: "Our Foundation", to: "/foundation" },
   ];
 
@@ -55,6 +56,9 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     };
   }, [menuActive]);
+
+  const isFoundation = pathname === "/foundation";
+  const isProject2029 = pathname === "/project-2029";
 
   return (
     <>
@@ -91,24 +95,31 @@ const Navbar = () => {
         <div className="h-[101px] bg-[#F6F6F6] flex items-center justify-center shadow-2xl">
           <div className="flex justify-between items-center w-[90%] mx-auto max-w-[1440px]">
             <div className="flex items-center gap-[13.53px]">
-              {pathname === "/foundation" ? (
+              {isFoundation ? (
                 <Icon.FoundationLogo className="max-[800px]:w-10! max-[800px]:h-10!" />
+              ) : isProject2029 ? (
+                <Icon.Project2029Logo className="max-[800px]:w-10! max-[800px]:h-10!" />
               ) : (
                 <Link to="/">
                   <Icon.Logo className="max-[800px]:w-10! max-[800px]:h-10!" />
                 </Link>
               )}
-              <div className="gap-2 flex flex-col max-[800px]:gap-0">
+              {isProject2029 ? (
                 <p className="uppercase font-bold text-[30.96px] leading-[30.96px] max-[800px]:text-xl">
-                  PMF {pathname === "/foundation" ? "Foundation" : "Academy"}
+                  PROJECT 2029
                 </p>
-                <p
-                  className={`uppercase font-bold  tracking-[25%] leading-[12.9px] max-[800px]:-mt-1 ${pathname === "/foundation" ? "text-[10px]" : "text-[12.9px]"}`}
-                >
-                  Play More Football{" "}
-                  {pathname === "/foundation" ? "Foundation" : ""}
-                </p>
-              </div>
+              ) : (
+                <div className="gap-2 flex flex-col max-[800px]:gap-0">
+                  <p className="uppercase font-bold text-[30.96px] leading-[30.96px] max-[800px]:text-xl">
+                    PMF {isFoundation ? "Foundation" : "Academy"}
+                  </p>
+                  <p
+                    className={`uppercase font-bold  tracking-[25%] leading-[12.9px] max-[800px]:-mt-1 ${isFoundation ? "text-[10px]" : "text-[12.9px]"}`}
+                  >
+                    Play More Football {isFoundation ? "Foundation" : ""}
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* MenuIcon — visible only on mobile */}
@@ -132,7 +143,7 @@ const Navbar = () => {
                         className={`text-[15px] font-medium leading-[17.29px] pb-px border-b transition-all ${
                           isActive
                             ? "border-b-primary border-b-2"
-                            : "border-b-black"
+                            : "border-b-transparent"
                         }`}
                       >
                         {label}
