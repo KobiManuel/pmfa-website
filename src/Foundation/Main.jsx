@@ -4,6 +4,8 @@ import YourImpact from "./YourImpact";
 import FooterBanner from "../components/FooterBanner";
 import SupportSection from "./SupportSection";
 import { useLocation, useNavigate } from "react-router-dom";
+import AboutPMFF from "./AboutPMFF";
+import WhatWeDo from "./WhatWeDo";
 
 const Main = () => {
   const { state, pathname } = useLocation();
@@ -37,8 +39,10 @@ const Main = () => {
   return (
     <>
       <Hero />
-      <YourImpact />
-      <SupportSection />
+      <AboutPMFF />
+      <WhatWeDo />
+      {/* <YourImpact />
+      <SupportSection /> */}
       <FooterBanner
         title="Become A Corporate Partner"
         description="Partner with PMF Foundation and help us scale our impact across Nigeria and Africa. Let's build the future of African football together."

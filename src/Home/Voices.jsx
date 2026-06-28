@@ -1,25 +1,31 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Icon } from "../components/Icon";
+import ellipse1 from "../assets/Ellipse1.png";
+import ellipse2 from "../assets/Ellipse2.png";
+import ellipse3 from "../assets/Ellipse3.png";
 
 const testimonials = [
   {
     quote:
       "PMF changed my son's life. He went from spending weekends on the streets to training every Saturday with purpose. The coaches genuinely care about these children.",
-    name: "Adaeze Okafor",
-    role: "Parent, Ajegunle",
+    name: "Coach Uche Emeka",
+    role: "Dominion Football Academy",
+    avatar: ellipse1,
   },
   {
     quote:
       "The coach training I received through PMF completely transformed how I work with young players. The methodology is modern and the results are clear on the pitch.",
-    name: "Emmanuel Igwe",
-    role: "Community Coach, Lagos",
+    name: "Player: Nurudeen Jinadu",
+    role: "Eagles Squad",
+    avatar: ellipse2,
   },
   {
     quote:
       "Participating in the tournament was the best day of my life. I got a medal and my school was cheering for me. I want to be a professional footballer now.",
-    name: "Tunde Musa",
-    role: "Player, Age 13",
+    name: "Parent: Mrs. Oladunni Balogun",
+    role: "Mother to Seun Balogun, Sparrow football club",
+    avatar: ellipse3,
   },
 ];
 
@@ -40,7 +46,7 @@ const Voices = () => {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="py-[62.5px] border-[1.14px] border-[#DFDFDF] rounded-[4.55px] px-[47.06px] flex flex-col bg-white justify-between max-[1350px]:py-10 max-[1350px]:px-8 max-[1000px]:py-8 max-[1000px]:px-7 max-[600px]:py-6 max-[600px]:px-5 max-[480px]:py-5 max-[480px]:px-5"
+              className="py-[62.5px] border-[1.14px] border-[#DFDFDF] rounded-[4.55px] px-[30px] flex flex-col bg-white justify-between max-[1350px]:py-10 max-[1350px]:px-8 max-[1000px]:py-8 max-[1000px]:px-7 max-[600px]:py-6 max-[600px]:px-5 max-[480px]:py-5 max-[480px]:px-5"
             >
               <div className="flex flex-col">
                 <Icon.Quote className="mb-7 max-[1350px]:w-[64px] max-[1350px]:h-[64px] max-[1000px]:w-[52px] max-[1000px]:h-[52px] max-[768px]:w-[40px] max-[768px]:h-[40px] max-[480px]:w-[32px] max-[480px]:h-[32px] max-[1350px]:mb-5 max-[768px]:mb-4" />
@@ -49,12 +55,20 @@ const Voices = () => {
                 </p>
               </div>
               <div className="flex gap-4 items-center mt-[45.5px] max-[1350px]:mt-8 max-[1000px]:mt-6 max-[480px]:mt-5 max-[480px]:gap-3">
-                <div className="w-10 h-10 bg-[#D9D9D9] rounded-full shrink-0 max-[768px]:w-8 max-[768px]:h-8 max-[480px]:w-7 max-[480px]:h-7" />
+                {t.avatar ? (
+                  <img
+                    src={t.avatar}
+                    alt={t.name}
+                    className="w-10 h-10 rounded-full object-cover shrink-0 max-[768px]:w-8 max-[768px]:h-8 max-[480px]:w-7 max-[480px]:h-7"
+                  />
+                ) : (
+                  <div className="w-10 h-10 bg-[#D9D9D9] rounded-full shrink-0 max-[768px]:w-8 max-[768px]:h-8 max-[480px]:w-7 max-[480px]:h-7" />
+                )}
                 <div className="flex flex-col">
                   <p className="text-[19px] leading-5 font-bold tracking-[1%] text-[#686868] max-[1350px]:text-[16px] max-[1000px]:text-[15px] max-[768px]:text-[14px] max-[480px]:text-[13px]">
                     {t.name}
                   </p>
-                  <p className="text-[16px] leading-5 font-inter max-[1350px]:text-[14px] max-[1000px]:text-[13px] max-[768px]:text-[12px] max-[480px]:text-[12px]">
+                  <p className="text-[16px] text-[#686868] leading-5 font-inter max-[1350px]:text-[14px] max-[1000px]:text-[13px] max-[768px]:text-[12px] max-[480px]:text-[12px]">
                     {t.role}
                   </p>
                 </div>

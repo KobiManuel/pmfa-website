@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Icon } from "../components/Icon";
+import mg0160 from "../assets/frame-316.png";
 
 const programs = [
   {
@@ -14,11 +15,6 @@ const programs = [
       "Competitive events designed to help young players apply football principles in real game scenarios while highlighting emerging talent within local communities.",
   },
   {
-    title: "Coach Education",
-    description:
-      "Comprehensive training sessions equipping coaches with the PMF Methodology — translating training concepts into real match situations effectively.",
-  },
-  {
     title: "Talent Scouting",
     description:
       "Structured scouting programmes designed to identify and connect promising young players with professional development pathways across Africa.",
@@ -27,6 +23,11 @@ const programs = [
     title: "Education Integration",
     description:
       "Combining academic achievement with athletic development to ensure our players grow into well-rounded individuals with life skills beyond football.",
+  },
+  {
+    title: "Coach Education",
+    description:
+      "Comprehensive training sessions equipping coaches with the PMF Methodology — translating training concepts into real match situations effectively.",
   },
   {
     title: "Community Outreach",
@@ -38,7 +39,7 @@ const programs = [
 const OurPrograms = () => {
   return (
     <section className="w-full pt-[46.1px] pb-[98px] bg-white max-[768px]:pt-8 max-[768px]:pb-14 max-[480px]:pt-6 max-[480px]:pb-10">
-      <div className="max-w-[1440px] w-[80%] mx-auto flex flex-col gap-[44.1px] items-center justify-center max-[1000px]:w-[90%] max-[600px]:w-[92%] max-[600px]:gap-8">
+      <div className="max-w-[1440px] w-[80%] mx-auto flex flex-col gap-[44.1px] max-[1000px]:w-[90%] max-[600px]:w-[92%] max-[600px]:gap-8">
         <SectionHeader
           eyebrow="What We Offer"
           title={
@@ -47,30 +48,43 @@ const OurPrograms = () => {
             </>
           }
           description="We provide structured programmes, community-based training, and accessible opportunities that help children learn, play, and grow on and off the pitch."
-          centered
         />
-        <div className="grid grid-cols-3 gap-6 w-full max-[1350px]:gap-4 max-[1000px]:grid-cols-2 max-[480px]:grid-cols-1 max-[480px]:gap-3">
-          {programs.map((program) => (
-            <div
-              key={program.title}
-              className="flex flex-col gap-[12.89px] h-[377px] rounded-[8px] border-[1.44px] border-[#DFDFDF] bg-[#F8F8F8] px-[32.48px] py-[32.48px] justify-between max-[1350px]:h-[320px] max-[1350px]:px-6 max-[1350px]:py-6 max-[1000px]:h-[280px] max-[768px]:h-auto max-[768px]:py-5 max-[768px]:px-5 max-[480px]:py-5 max-[480px]:px-5"
-            >
-              <div className="flex flex-col gap-[12.89px]">
-                <Icon.Target />
-                <div className="flex flex-col gap-2 font-inter">
-                  <p className="text-[18.21px] leading-[29.58px] font-bold max-[1350px]:text-[16px] max-[1350px]:leading-[26px] max-[1000px]:text-[15px] max-[768px]:text-[14px] max-[768px]:leading-[22px] max-[480px]:text-[14px]">
-                    {program.title}
-                  </p>
-                  <p className="text-[18.21px] leading-[29.58px] max-[1350px]:text-[15px] max-[1350px]:leading-[24px] max-[1000px]:text-[14px] max-[1000px]:leading-[22px] max-[768px]:text-[13px] max-[768px]:leading-[20px] max-[480px]:text-[12px] max-[480px]:leading-[18px]">
-                    {program.description}
-                  </p>
+
+        {/* Cards + Image row */}
+        <div className="flex gap-6 items-stretch max-[900px]:flex-col-reverse max-[1350px]:gap-4">
+          {/* Left: 2-col card grid */}
+          <div className="grid grid-cols-2 gap-4 flex-1 max-[480px]:grid-cols-1 max-[480px]:gap-3">
+            {programs.map((program) => (
+              <div
+                key={program.title}
+                className="flex flex-col gap-[12.89px] h-[251.5px] rounded-[8px] border-[1.44px] border-[#DFDFDF] bg-[#F8F8F8] px-6 py-6 justify-between max-[1350px]:px-5 max-[1350px]:py-5 max-[768px]:h-auto max-[768px]:py-5 max-[768px]:px-5"
+              >
+                <div className="flex flex-col gap-[12.89px]">
+                  <Icon.Target />
+                  <div className="flex flex-col gap-1.5 font-inter">
+                    <p className="text-[14px] leading-[22px] font-bold max-[1350px]:text-[13px] max-[1350px]:leading-[20px] max-[1000px]:text-[12px] max-[1000px]:leading-[18px]">
+                      {program.title}
+                    </p>
+                    <p className="text-[12px] leading-[19px] max-[1350px]:text-[11px] max-[1350px]:leading-[17px] max-[1000px]:text-[11px] max-[1000px]:leading-[16px]">
+                      {program.description}
+                    </p>
+                  </div>
                 </div>
+                <p className="font-inter text-[#686868] font-bold text-[12px] leading-[32px] cursor-pointer max-[1350px]:text-[11px] max-[1000px]:text-[11px]">
+                  Learn More →
+                </p>
               </div>
-              <p className="font-inter text-[#686868] font-bold text-[18px] leading-[32px] cursor-pointer max-[1350px]:text-[15px] max-[1000px]:text-[14px] max-[768px]:text-[13px] max-[480px]:text-[13px] max-[480px]:mt-2">
-                Learn More →
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Right: Image */}
+          <div className="w-[45%] flex-shrink-0 self-stretch max-[900px]:w-full max-[900px]:h-[400px]">
+            <img
+              src={mg0160}
+              alt="Players on the pitch"
+              className="w-full h-full object-cover rounded-[16px]"
+            />
+          </div>
         </div>
       </div>
     </section>
