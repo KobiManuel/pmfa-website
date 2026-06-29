@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
-import placeholderImage from "../assets/frame 202.png";
+import placeholderImage from "../assets/Frame 202.png";
 
 const milestones = [
   {
