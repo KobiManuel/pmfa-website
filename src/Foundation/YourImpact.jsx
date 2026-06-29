@@ -12,7 +12,7 @@ const tiers = [
     amount: "$50",
     title: "Sponsors Tournament Entry",
     description:
-      "Covers one school's full tournament participation — travel, kit, medals, and registration fees.",
+      "Covers one school's full tournament participation, travel, kit, medals, and registration fees.",
   },
   {
     amount: "$100",

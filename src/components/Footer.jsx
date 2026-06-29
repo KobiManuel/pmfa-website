@@ -33,7 +33,7 @@ const Footer = () => {
               ) : (
                 <div className="gap-2 flex flex-col">
                   <p className="uppercase font-bold text-[44.96px] leading-[44.96px] text-white max-[1350px]:text-[36px] max-[1350px]:leading-[36px] max-[768px]:text-[28px] max-[768px]:leading-[28px] max-[480px]:text-[22px] max-[480px]:leading-[22px]">
-                    PMF Academy
+                    PMF Foundation
                   </p>
                   <p
                     className={`uppercase font-bold text-[18.73px] tracking-[25%] leading-[18.73px] text-white max-[1350px]:text-[15px] max-[1350px]:leading-[15px] max-[768px]:text-[12px] max-[768px]:leading-[12px] max-[480px]:text-[10px]  ${isFoundation && "text-[10px]! leading-[12.9px]!  max-[768px]:text-[8px]! max-[768px]:leading-[12px]"}`}
@@ -77,20 +77,16 @@ const Footer = () => {
                 Company
               </p>
               {[
-                { label: "Our Impact", to: "/", hidden: true },
-                { label: "Careers", to: "/", hidden: true },
-                { label: "Media Kit", to: "/", hidden: true },
-                { label: "Privacy Policy", to: "/", hidden: true },
-                { label: "Partners", to: "/", hidden: true },
-              ].map(({ label, to, hidden }) => (
-                <li
-                  key={label}
-                  style={
-                    hidden
-                      ? { visibility: "hidden", pointerEvents: "none" }
-                      : {}
-                  }
-                >
+                {
+                  label: "Our Impact",
+                  to: "takes us to in the press section / media page",
+                },
+                { label: "Careers", to: "/leads to mail" },
+                { label: "Media Kit", to: "/leads to mail" },
+                { label: "Privacy Policy", to: "/add a privacy policy page" },
+                { label: "Partners", to: "/leads to mail" },
+              ].map(({ label, to }) => (
+                <li key={label}>
                   <Link
                     to={to}
                     className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
@@ -105,20 +101,13 @@ const Footer = () => {
                 Resources
               </p>
               {[
-                { label: "Scout Portal", to: "/", hidden: true },
-                { label: "Coach Portal", to: "/", hidden: true },
-                { label: "Parent Guide", to: "/", hidden: true },
-                { label: "Training Schedule", to: "/", hidden: true },
-                { label: "Contact Us", to: "/", hidden: true },
-              ].map(({ label, to, hidden }) => (
-                <li
-                  key={label}
-                  style={
-                    hidden
-                      ? { visibility: "hidden", pointerEvents: "none" }
-                      : {}
-                  }
-                >
+                { label: "Scout Portal", to: "/to mail" },
+                { label: "Coach Portal", to: "/ to mail" },
+                { label: "Parent Guide", to: "/ to mail" },
+                { label: "Training Schedule", to: "/ to mail" },
+                { label: "Contact Us", to: "/ to mail" },
+              ].map(({ label, to }) => (
+                <li key={label}>
                   <Link
                     to={to}
                     className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"

@@ -5,7 +5,7 @@ const articles = [
   {
     day: "05",
     month: "Jan '26",
-    title: "PMF Launches Ajegunle Tournament — 200 Children Compete",
+    title: "PMF Launches Ajegunle Tournament ,  200 Children Compete",
     description:
       "Play More Football Foundation hosts its inaugural community tournament, bringing together over 200 children from 16 schools across the Ajegunle area of Lagos.",
     href: "https://newstap.com.ng/play-more-football-foundation-takes-over-ajegunle/",
@@ -57,7 +57,7 @@ const articles = [
   {
     day: "24",
     month: "Jan '26",
-    title: "PMF Launches Ajegunle Tournament — 200 Children Compete",
+    title: "PMF Launches Ajegunle Tournament ,  200 Children Compete",
     description:
       "Play More Football Foundation hosts its inaugural community tournament, bringing together over 200 children from 16 schools across the Ajegunle area of Lagos.",
     href: "https://memonewsng.wordpress.com/2026/01/25/play-more-foundation-takes-over-ajegunle-memonews-duch-tv-africa-products/",

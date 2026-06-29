@@ -9,7 +9,7 @@ import blur from "../assets/images/Blur.svg";
 const slides = [
   {
     src: heroBanner,
-    eyebrow: "PMF Foundation — Project 2029",
+    eyebrow: "PMF Foundation ,  Project 2029",
     title: (
       <>
         Building Nigeria's Next Generation Of{" "}
@@ -22,7 +22,7 @@ const slides = [
   },
   {
     src: heroBanner1,
-    eyebrow: "PMF Foundation — Project 2029",
+    eyebrow: "PMF Foundation ,  Project 2029",
     title: (
       <>
         Building Nigeria's Next Generation Of{" "}
@@ -35,7 +35,7 @@ const slides = [
   },
   {
     src: heroBanner2,
-    eyebrow: "PMF Foundation — Project 2029",
+    eyebrow: "PMF Foundation ,  Project 2029",
     title: (
       <>
         Building Nigeria's Next Generation Of{" "}
@@ -48,7 +48,7 @@ const slides = [
   },
   {
     src: heroBanner3,
-    eyebrow: "PMF Foundation — Project 2029",
+    eyebrow: "PMF Foundation ,  Project 2029",
     title: (
       <>
         Building Nigeria's Next Generation Of{" "}
@@ -93,7 +93,7 @@ const Hero = () => {
         </div>
       ))}
 
-      {/* Dots — top right */}
+      {/* Dots ,  top right */}
       <div className="absolute top-20 -translate-x-1/2  left-1/2  z-20 flex items-center gap-[10px]">
         {slides.map((_, i) => (
           <button
@@ -109,7 +109,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Content — bottom left */}
+      {/* Content ,  bottom left */}
       <div className="relative z-10 h-full min-h-[inherit] flex items-end">
         <div className="max-w-[1440px] w-[90%] mx-auto pb-[44.37px] max-[1000px]:pb-8 max-[600px]:pb-6 max-[600px]:w-[92%]">
           <div className="max-w-[70%] max-[1000px]:max-w-full">

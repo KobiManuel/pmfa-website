@@ -66,7 +66,7 @@ const WhatWeDo = () => {
       {/* ── Vision + Growth ── */}
       <section className="w-full bg-[#F8F8F8] py-[60px] max-[1000px]:py-12 max-[480px]:py-8">
         <div className="max-w-[1440px] mx-auto w-[90%] max-[600px]:w-[92%] flex gap-[64px] items-stretch max-[1000px]:flex-col max-[1000px]:gap-10">
-          {/* Left — image */}
+          {/* Left ,  image */}
           <div className="flex-1 self-stretch min-h-[460px] max-[1000px]:min-h-0 max-[1000px]:h-[360px] max-[600px]:h-[260px] max-[480px]:h-[220px]">
             <img
               src={frame215}
@@ -75,7 +75,7 @@ const WhatWeDo = () => {
             />
           </div>
 
-          {/* Right — vision + growth */}
+          {/* Right ,  vision + growth */}
           <div className="flex-1 flex flex-col gap-10 justify-center max-[480px]:gap-8">
             <SectionHeader
               eyebrow={"Our Vision"}
@@ -143,7 +143,7 @@ const WhatWeDo = () => {
       <section className="w-full bg-[#F8F8F8] py-[60px] pb-[60px] max-[1000px]:pb-12 max-[1000px]:py-12 max-[480px]:pb-8 max-[480px]:py-8">
         <div className="max-w-[1440px] mx-auto w-[90%] max-[600px]:w-[92%]">
           <div className="flex gap-8 overflow-hidden max-[900px]:flex-col">
-            {/* Left — text */}
+            {/* Left ,  text */}
             <div className="flex-1 rounded-2xl bg-white px-[48px] py-[52px] flex flex-col gap-6 max-[1350px]:px-10 max-[1350px]:py-10 max-[480px]:px-6 max-[480px]:py-8">
               <div className="flex flex-col">
                 <p className="uppercase font-medium text-text-color text-[20.33px] max-[600px]:text-[15px]">
@@ -174,7 +174,7 @@ const WhatWeDo = () => {
               </button>
             </div>
 
-            {/* Right — image */}
+            {/* Right ,  image */}
             <div className="flex-1 max-[900px]:h-[300px] max-[480px]:h-[220px]">
               <img
                 src={mg0160}

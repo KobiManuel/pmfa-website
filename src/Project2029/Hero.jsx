@@ -151,9 +151,9 @@ const Hero = () => {
             </ul>
           </div>
 
-          {/* Right — two dark cards */}
+          {/* Right ,  two dark cards */}
           <div className="flex-1 flex flex-col gap-4 max-[900px]:w-full">
-            {/* Card 1 — 2029 goal */}
+            {/* Card 1 ,  2029 goal */}
             <div className="bg-[#1A1A1A] rounded-[8px] px-8 py-7 flex flex-col gap-3 max-[480px]:px-5 max-[480px]:py-5">
               <p className="text-white text-center font-bold text-[52px] leading-[52px] -tracking-[2%] max-[1350px]:text-[44px] max-[1000px]:text-[36px] max-[480px]:text-[30px]">
                 2029
@@ -165,7 +165,7 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Card 2 — The Opportunity */}
+            {/* Card 2 ,  The Opportunity */}
             <div className="bg-[#1A1A1A] rounded-[8px] px-8 py-7 flex flex-col gap-3 max-[480px]:px-5 max-[480px]:py-5">
               <p className="uppercase font-bold tracking-[0.16em] text-white text-[12px] leading-[1.4]">
                 The Opportunity

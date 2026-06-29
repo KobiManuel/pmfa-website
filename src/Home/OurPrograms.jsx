@@ -27,7 +27,7 @@ const programs = [
   {
     title: "Coach Education",
     description:
-      "Comprehensive training sessions equipping coaches with the PMF Methodology — translating training concepts into real match situations effectively.",
+      "Comprehensive training sessions equipping coaches with the PMF Methodology ,  translating training concepts into real match situations effectively.",
   },
   {
     title: "Community Outreach",

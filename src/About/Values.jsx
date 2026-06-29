@@ -16,7 +16,7 @@ const CoreValues = () => {
               <span className="text-primary"> values</span>
             </>
           }
-          description="These five values are the foundation of everything we do — on and off the pitch."
+          description="These five values are the foundation of everything we do, on and off the pitch."
           descriptionClassName={
             "min-[1350px]:text-[20px] min-[1350px]:leading-[32px]"
           }

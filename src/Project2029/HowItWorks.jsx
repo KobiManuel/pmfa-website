@@ -62,7 +62,7 @@ const HowItWorks = () => {
               </>
             }
             description={
-              "A three-pillar structure — Talent Identification, Elite Training, and National Competition"
+              "A three-pillar structure ,  Talent Identification, Elite Training, and National Competition"
             }
             descriptionClassName={
               "min-[1350px]:!text-[16px] min-[1350px]:!leading-[28px]"
@@ -107,7 +107,7 @@ const HowItWorks = () => {
       {/* ── The Roadmap ── */}
       <section className="w-full bg-white py-[72px] max-[1000px]:py-14 max-[480px]:py-10">
         <div className="max-w-[1440px] mx-auto w-[90%] max-[600px]:w-[92%] flex gap-[64px] items-stretch max-[1000px]:flex-col max-[1000px]:gap-10">
-          {/* Left — timeline */}
+          {/* Left ,  timeline */}
           <div className="flex-1 flex flex-col gap-6 justify-center">
             <h2 className="font-bold uppercase text-[52px] leading-[52px] -tracking-[1%] text-text-color max-[1350px]:text-[44px] max-[1000px]:text-[36px] max-[480px]:text-[28px] max-[480px]:leading-[30px]">
               The <span className="text-primary">Roadmap</span>
@@ -143,7 +143,7 @@ const HowItWorks = () => {
             </div>
           </div>
 
-          {/* Right — image */}
+          {/* Right ,  image */}
           <div className="flex-1 self-stretch min-h-[460px] max-[1000px]:min-h-0 max-[1000px]:h-[360px] max-[600px]:h-[260px] max-[480px]:h-[220px]">
             <img
               src={mg0257}

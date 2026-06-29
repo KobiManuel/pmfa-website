@@ -34,7 +34,7 @@ const Gallery = () => {
               <span className="text-primary"> Highlights</span>
             </>
           }
-          description="Ajegunle Tournament, January 24th 2026 — 200+ children, 16 schools."
+          description="Ajegunle Tournament, January 24th 2026 ,  200+ children, 16 schools."
           descriptionClassName={
             "min-[1350px]:!text-[16px] min-[1350px]:!leading-[28px]"
           }

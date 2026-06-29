@@ -149,7 +149,7 @@ const BudgetBreakdown = () => {
             {/* 3 Regions total */}
             <div className="border-[1.14px] border-primary bg-primary/10 items-center justify-center rounded-[8px] px-6 py-6 flex flex-col gap-1 max-[480px]:px-5">
               <p className="uppercase font-bold tracking-[0.1em] text-[#6E6E6E] text-[10px]">
-                3 Regions — Camp Total
+                3 Regions , Camp Total
               </p>
               <p className="font-bold text-[40px] leading-[44px] text-primary max-[1350px]:text-[34px] max-[480px]:text-[28px]">
                 ₦15,000,000
@@ -268,7 +268,7 @@ const BudgetBreakdown = () => {
             </div>
           </div>
 
-          {/* Right — media strategy */}
+          {/* Right ,  media strategy */}
           <div className="flex-1 flex flex-col gap-4 max-[480px]:gap-3">
             <p className="uppercase font-bold tracking-[0.16em] text-[#6E6E6E] text-[13px] max-[600px]:text-[11px]">
               Marketing & Media Strategy

@@ -165,7 +165,7 @@ const SupportSection = () => {
         alert(`✅ Donation successful! Reference: ${response.reference}`);
       },
       onClose: () => {
-        // user closed the popup — no action needed
+        // user closed the popup ,  no action needed
       },
     });
 
@@ -200,7 +200,7 @@ const SupportSection = () => {
               <p
                 className={`text-[14.33px] font-inter leading-[25.08px] text-text-color -tracking-[1%]  max-[480px]:text-[13px] max-[480px]:leading-[20px]`}
               >
-                Your contribution — no matter the size — goes directly toward
+                Your contribution, no matter the size, goes directly toward
                 giving Nigeria's brightest young football talents the
                 opportunity they deserve. The PMF Foundation is built on the
                 belief that every child deserves a chance to play, grow, and
@@ -239,7 +239,7 @@ const SupportSection = () => {
             </div>
           </div>
 
-          {/* ── Right Panel — Donation Form ── */}
+          {/* ── Right Panel ,  Donation Form ── */}
           <div
             id="support"
             className="max-[1000px]:w-full bg-[#F8F8F8] border-[0.92px] border-[#D5D5D5] rounded-[7.92px] flex flex-col p-[46px] max-[800px]:p-6"

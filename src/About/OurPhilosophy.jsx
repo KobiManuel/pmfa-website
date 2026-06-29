@@ -15,7 +15,7 @@ const OurPhilosophy = () => {
           }
           description="At PMFA, our philosophy is simple: we train the way we want to play, and we play the way we train.
 
-Our training sessions form the foundation of our identity. Every activity, drill, and game scenario reflects how we want our players to think, move, and compete on match day. Football is not just about physical ability — it is about intelligence, creativity, and decision-making.
+Our training sessions form the foundation of our identity. Every activity, drill, and game scenario reflects how we want our players to think, move, and compete on match day. Football is not just about physical ability,it is about intelligence, creativity, and decision-making.
 
 Our playing philosophy shapes our thoughts and actions both on and off the pitch. We aim to develop disciplined, confident, and tactically aware players who understand the game and express themselves positively."
           descriptionClassName={"!text-[16px] !leading-[28px]"}

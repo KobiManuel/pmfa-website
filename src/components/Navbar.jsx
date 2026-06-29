@@ -42,8 +42,8 @@ const Navbar = () => {
     { label: "About", to: "/about" },
     { label: "Programs", to: "/programs" },
     { label: "Media", to: "/media" },
-    { label: "Project 2029", to: "/project-2029" },
     { label: "Our Foundation", to: "/foundation" },
+    { label: "Project 2029", to: "/project-2029" },
   ];
 
   useEffect(() => {
@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="h-[101px]" />
 
       <nav className="fixed top-0 left-0 w-full z-50">
-        {/* Top banner — hidden on mobile */}
+        {/* Top banner ,  hidden on mobile */}
         <div
           ref={bannerRef}
           className="max-[1000px]:hidden bg-primary font-sans w-full h-[141px] flex justify-center items-center gap-[47.17px]"
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="flex items-center gap-[44.5px]">
             <div className="flex flex-col gap-[11.99px] items-center relative after:absolute after:h-full after:w-px after:bg-black after:top-0 after:-right-[22px]">
               <p className="font-bold text-base tracking-[24%]">
-                CHINEDU OBI — AJEGUNLE FC
+                CHINEDU OBI — PMFA
               </p>
               <p className="font-bold text-2xl leading-[24px]! tracking-[10%] text-center">
                 ⭐ PMFA STAR PLAYER OF THE SEASON
@@ -122,7 +122,7 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* MenuIcon — visible only on mobile */}
+            {/* MenuIcon ,  visible only on mobile */}
             <div className="min-[1000px]:hidden">
               <MenuIcon
                 handleMenuToggle={handleMenuToggle}

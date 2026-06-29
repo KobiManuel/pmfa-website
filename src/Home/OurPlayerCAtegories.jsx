@@ -16,7 +16,7 @@ const categories = [
     ageRange: "U8 – U9 YEARS",
     format: "4 vs 4",
     description:
-      "Builds love for football through fun and technical skills — Ball Mastery, Dribbling, Passing & Receiving. Players develop through the game itself, without coach interference.",
+      "Builds love for football through fun and technical skills, Ball Mastery, Dribbling, Passing & Receiving. Players develop through the game itself, without coach interference.",
   },
   {
     code: "E5",
@@ -57,7 +57,7 @@ const categories = [
     format: "11 vs 11",
     isActive: true,
     description:
-      "Refinement and Execution of the Principles of Play. The pinnacle of the PMFA pathway — players are prepared for professional football through elite coaching, competitive exposure, and structured scouting opportunities.",
+      "Refinement and Execution of the Principles of Play. The pinnacle of the PMFA pathway, players are prepared for professional football through elite coaching, competitive exposure, and structured scouting opportunities.",
     wide: true,
   },
 ];
@@ -73,18 +73,18 @@ const OurPlayerCategories = () => {
               Our Player <span className="text-primary">Categories</span>
             </>
           }
-          description="Every player has a place at PMFA. Our seven-stage pathway is designed to grow with your child — from first kick to elite development."
+          description="Every player has a place at PMFA. Our seven-stage pathway is designed to grow with your child ,  from first kick to elite development."
           centered
         />
 
-        {/* Top row — 4 cards */}
+        {/* Top row ,  4 cards */}
         <div className="mt-[44.1px] grid grid-cols-4 gap-2 w-full max-[1350px]:gap-2 max-[1000px]:grid-cols-2 max-[480px]:grid-cols-1 max-[480px]:gap-2">
           {categories.slice(0, 4).map((cat) => (
             <CategoryCard key={cat.code} cat={cat} />
           ))}
         </div>
 
-        {/* Bottom row — 2 normal + 1 wide */}
+        {/* Bottom row ,  2 normal + 1 wide */}
         <div className="grid grid-cols-4 gap-2 w-full max-[1350px]:gap-2 max-[1000px]:grid-cols-2 max-[480px]:grid-cols-1 max-[480px]:gap-2">
           {categories.slice(4, 6).map((cat) => (
             <CategoryCard key={cat.code} cat={cat} />

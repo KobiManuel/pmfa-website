@@ -7,7 +7,7 @@ const MeetOurFounder = () => {
   return (
     <section className="bg-white py-[52px] max-[768px]:py-10 max-[480px]:py-8">
       <div className="max-w-[1440px] mx-auto w-[90%] flex flex-row-reverse items-center justify-between gap-[87.44px] *:w-1/2 max-[1350px]:gap-14 max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-10 max-[600px]:w-[92%] max-[600px]:gap-8">
-        {/* Left — Text Block */}
+        {/* Left ,  Text Block */}
         <div className="flex flex-col gap-[42.82px] max-[1350px]:gap-8 max-[480px]:gap-6">
           <SectionHeader
             title={
@@ -37,7 +37,7 @@ Beyond coaching, Lawrence is a sports consultant and coordinator for 1TURNIER Sw
           </div>
         </div>
 
-        {/* Right — Founder Card */}
+        {/* Right ,  Founder Card */}
         <div className="flex flex-col items-center rounded-2xl border-[1.44px] border-[#BFB2B2] bg-[#FAFAFA] px-[5%] justify-center py-[40px] max-[1350px]:py-8 max-[1000px]:max-w-[480px] max-[1000px]:mx-auto max-[1000px]:w-full max-[768px]:max-w-full max-[480px]:py-6 max-[480px]:px-6">
           <img
             src={founder}
@@ -49,7 +49,7 @@ Beyond coaching, Lawrence is a sports consultant and coordinator for 1TURNIER Sw
               Lawrence Okonji
             </p>
             <p className="font-bold text-[20px] leading-[28px] text-center max-[1350px]:text-[18px] max-[768px]:text-[16px] max-[480px]:text-[15px] max-[480px]:leading-[24px]">
-              Founder & CEO — PMFA
+              Founder & CEO , PMFA
             </p>
           </div>
           <p className="font-inter text-[14px] leading-6 text-center mb-[30px] max-[480px]:text-[13px] max-[480px]:leading-[22px]">

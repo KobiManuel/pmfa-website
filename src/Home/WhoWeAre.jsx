@@ -40,7 +40,7 @@ const WhoWeAre = () => {
           <p className="text-[19.46px] font-inter leading-[29.19px] text-text-color -tracking-[1%] max-[1350px]:text-[17px] max-[1350px]:leading-[26px] max-[1000px]:text-[16px] max-[600px]:text-[14px] max-[600px]:leading-[22px] max-[480px]:text-[13px]">
             At the heart of our work is a dedication to values such as
             discipline, teamwork, confidence, creativity, and passion. We
-            believe football is more than a sport — it is a pathway to
+            believe football is more than a sport , it is a pathway to
             education, empowerment, and a brighter future.
           </p>
           {/* <button className="uppercase cursor-pointer rounded-[4px] bg-primary h-[68.11px] w-[243.23px] text-[19.46px] leading-[19.46px] font-bold max-[1350px]:h-[56px] max-[1350px]:w-[210px] max-[1350px]:text-[17px] max-[768px]:h-[48px] max-[768px]:w-[180px] max-[768px]:text-[15px] max-[480px]:w-full max-[480px]:h-[48px] max-[480px]:text-[14px]">

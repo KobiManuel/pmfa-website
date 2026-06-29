@@ -15,7 +15,7 @@ const cards = [
   {
     number: "03",
     title: "Manage Game Moments",
-    body: "Players learn to read and manage different phases — in possession, out of possession, and transitions.",
+    body: "Players learn to read and manage different phases, in possession, out of possession, and transitions.",
   },
 ];
 
@@ -32,7 +32,7 @@ const HowWeTrain = () => {
                 <span className="text-primary"> Methodology</span>
               </>
             }
-            description="Our methodology follows a real football approach — the game is the teacher. Players learn best by playing. Sessions are built around carefully designed small-sided games, creating more touches, more decisions, and more involvement for every player."
+            description="Our methodology follows a real football approach, the game is the teacher. Players learn best by playing. Sessions are built around carefully designed small-sided games, creating more touches, more decisions, and more involvement for every player."
             descriptionClassName="min-[1350px]:text-[20px] min-[1350px]:leading-[32px]"
             centered
           />

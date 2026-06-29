@@ -29,7 +29,7 @@ const programs = [
     tags: ["Core", "Ages 6-18"],
     title: "School Integration Programme",
     description:
-      "We partner with schools to bring structured football programmes directly to students. Our vision is that grassroots programmes connect deeply with schools and communities nationwide — ensuring children can combine education and sport for balanced, holistic development.",
+      "We partner with schools to bring structured football programmes directly to students. Our vision is that grassroots programmes connect deeply with schools and communities nationwide ,  ensuring children can combine education and sport for balanced, holistic development.",
     image: img3,
   },
   {
@@ -43,14 +43,14 @@ const programs = [
     tags: ["Core", "Ages 6-18"],
     title: "Coach Education Workshops",
     description:
-      "Our Coach Training Sessions equip community coaches with the PMF Methodology — giving them practical tools to translate training concepts into real match situations. Over 50 coaches have been trained across sessions in Lagos (January & September 2025). Sessions are hands-on, evidence-based, and transformative.",
+      "Our Coach Training Sessions equip community coaches with the PMF Methodology ,  giving them practical tools to translate training concepts into real match situations. Over 50 coaches have been trained across sessions in Lagos (January & September 2025). Sessions are hands-on, evidence-based, and transformative.",
     image: img5,
   },
   {
     tags: ["Core", "Ages 6-15"],
     title: "Character & Life Skills Development",
     description:
-      "Beyond football, PMF builds essential life skills — discipline, teamwork, resilience, and leadership. Coaches at PMF are mentors first, shaping empathy and positive character in every young player they work with. Football at PMF is a vehicle, not just a destination.",
+      "Beyond football, PMF builds essential life skills ,  discipline, teamwork, resilience, and leadership. Coaches at PMF are mentors first, shaping empathy and positive character in every young player they work with. Football at PMF is a vehicle, not just a destination.",
     image: img6,
   },
 ];

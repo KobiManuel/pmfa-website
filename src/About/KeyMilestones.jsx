@@ -28,7 +28,7 @@ const milestones = [
       "PMF launched its first major community project in Ajegunle, hosting a football tournament on January 24th that brought together over 200 children from 16 schools. Every participant received a medal, reinforcing PMF's focus on participation and positive engagement.",
   },
   {
-    date: "2026 — Onwards",
+    date: "2026 ,  Onwards",
     title: "Scaling Across Lagos & Nigeria",
     description:
       "With plans to expand across Lagos State and beyond, PMF aims to reach over 600 children in multiple communities, establishing a sustainable model for grassroots football development across Africa.",
@@ -39,7 +39,7 @@ const KeyMilestones = () => {
   return (
     <section className="bg-white py-[52px] max-[768px]:py-10 max-[480px]:py-8">
       <div className="max-w-[1440px] mx-auto w-[85%] flex items-center justify-between gap-[87.44px] *:w-1/2 max-[1000px]:flex-col max-[1000px]:*:w-full max-[1000px]:gap-10 max-[600px]:w-[92%]">
-        {/* Left — timeline */}
+        {/* Left ,  timeline */}
         <div className="flex flex-col gap-[42.82px] max-[600px]:gap-8">
           <SectionHeader
             eyebrow="Our Journey"
@@ -80,7 +80,7 @@ const KeyMilestones = () => {
           </div>
         </div>
 
-        {/* Right — image */}
+        {/* Right ,  image */}
         <div className="rounded-2xl overflow-hidden h-full max-[1000px]:max-h-[500px] max-[600px]:max-h-[380px] max-[480px]:max-h-[280px]">
           <img
             src={placeholderImage}
