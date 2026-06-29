@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import heroBanner from "../assets/images/foundation-hero.svg";
 import heroBanner1 from "../assets/image 10.png";
-import heroBanner2 from "../assets/FRame-316.png";
+import heroBanner2 from "../assets/Frame 316.png";
 import heroBanner3 from "../assets/_MG_0160.jpeg";
 
 import blur from "../assets/images/Blur.svg";
