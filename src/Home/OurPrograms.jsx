@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Icon } from "../components/Icon";
-import mg0160 from "../assets/frame-316.png";
+import mg0160 from "../assets/Frame 316.png";
 
 const programs = [
   {
