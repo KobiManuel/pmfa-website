@@ -3,6 +3,9 @@ import heroBanner from "../assets/images/image 11.svg";
 import heroBanner1 from "../assets/image 10.png";
 import heroBanner2 from "../assets/Frame 316.png";
 import heroBanner3 from "../assets/_MG_0160.jpeg";
+import heroBanner4 from "../assets/_MG_0062.jpeg";
+import heroBanner5 from "../assets/_MG_0074.jpeg";
+import heroBanner6 from "../assets/IMG_0683.jpeg";
 
 const slides = [
   {
@@ -40,6 +43,39 @@ const slides = [
   },
   {
     src: heroBanner3,
+    eyebrow: "The Vision",
+    title: (
+      <>
+        Project <span className="text-primary">2029</span>
+      </>
+    ),
+    subtitle:
+      "A bold roadmap to transform grassroots football across Nigeria, reaching 10,000+ children by 2029.",
+  },
+  {
+    src: heroBanner4,
+    eyebrow: "The Vision",
+    title: (
+      <>
+        Project <span className="text-primary">2029</span>
+      </>
+    ),
+    subtitle:
+      "A bold roadmap to transform grassroots football across Nigeria, reaching 10,000+ children by 2029.",
+  },
+  {
+    src: heroBanner5,
+    eyebrow: "The Vision",
+    title: (
+      <>
+        Project <span className="text-primary">2029</span>
+      </>
+    ),
+    subtitle:
+      "A bold roadmap to transform grassroots football across Nigeria, reaching 10,000+ children by 2029.",
+  },
+  {
+    src: heroBanner6,
     eyebrow: "The Vision",
     title: (
       <>

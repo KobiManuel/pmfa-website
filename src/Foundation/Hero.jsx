@@ -3,6 +3,9 @@ import heroBanner from "../assets/images/foundation-hero.svg";
 import heroBanner1 from "../assets/image 10.png";
 import heroBanner2 from "../assets/Frame 316.png";
 import heroBanner3 from "../assets/_MG_0160.jpeg";
+import heroBanner4 from "../assets/images/Frame 225.png";
+import heroBanner5 from "../assets/images/Frame 226.png";
+import heroBanner6 from "../assets/IMG_0928.jpeg";
 
 import blur from "../assets/images/Blur.svg";
 
@@ -48,6 +51,45 @@ const slides = [
   },
   {
     src: heroBanner3,
+    eyebrow: "PMF Foundation ,  Project 2029",
+    title: (
+      <>
+        Building Nigeria's Next Generation Of{" "}
+        <span className="text-primary">Football Stars</span>
+      </>
+    ),
+    subtitle: "Developing Elite U-17 Talent for Global Competition",
+    description:
+      "By 2029, we will produce a world-class U-17 team capable of competing with top European clubs, building discipline, confidence, and future leaders.",
+  },
+  {
+    src: heroBanner4,
+    eyebrow: "PMF Foundation ,  Project 2029",
+    title: (
+      <>
+        Building Nigeria's Next Generation Of{" "}
+        <span className="text-primary">Football Stars</span>
+      </>
+    ),
+    subtitle: "Developing Elite U-17 Talent for Global Competition",
+    description:
+      "By 2029, we will produce a world-class U-17 team capable of competing with top European clubs, building discipline, confidence, and future leaders.",
+  },
+  {
+    src: heroBanner5,
+    eyebrow: "PMF Foundation ,  Project 2029",
+    title: (
+      <>
+        Building Nigeria's Next Generation Of{" "}
+        <span className="text-primary">Football Stars</span>
+      </>
+    ),
+    subtitle: "Developing Elite U-17 Talent for Global Competition",
+    description:
+      "By 2029, we will produce a world-class U-17 team capable of competing with top European clubs, building discipline, confidence, and future leaders.",
+  },
+  {
+    src: heroBanner6,
     eyebrow: "PMF Foundation ,  Project 2029",
     title: (
       <>

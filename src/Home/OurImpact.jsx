@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
-import frame215 from "../assets/Frame 215.png";
+import frame215 from "../assets/Frame 3162.png";
 
 const stats = [
   { value: "1,000+", label: "Children Participated" },

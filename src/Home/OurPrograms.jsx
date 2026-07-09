@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { Icon } from "../components/Icon";
-import mg0160 from "../assets/Frame 316.png";
+import mg0160 from "../assets/_MG_0074.jpeg";
 
 const programs = [
   {
@@ -57,7 +57,7 @@ const OurPrograms = () => {
             {programs.map((program) => (
               <div
                 key={program.title}
-                className="flex flex-col gap-[12.89px] h-[251.5px] rounded-[8px] border-[1.44px] border-[#DFDFDF] bg-[#F8F8F8] px-6 py-6 justify-between max-[1350px]:px-5 max-[1350px]:py-5 max-[768px]:h-auto max-[768px]:py-5 max-[768px]:px-5"
+                className="flex flex-col gap-[12.89px] h-fit rounded-[8px] border-[1.44px] border-[#DFDFDF] bg-[#F8F8F8] px-6 py-6 justify-between max-[1350px]:px-5 max-[1350px]:py-5 max-[768px]:h-auto max-[768px]:py-5 max-[768px]:px-5"
               >
                 <div className="flex flex-col gap-[12.89px]">
                   <Icon.Target />
@@ -78,7 +78,7 @@ const OurPrograms = () => {
           </div>
 
           {/* Right: Image */}
-          <div className="w-[45%] flex-shrink-0 self-stretch max-[900px]:w-full max-[900px]:h-[400px]">
+          <div className="w-[55%] flex-shrink-0 self-stretch max-[900px]:w-full max-[900px]:h-[400px]">
             <img
               src={mg0160}
               alt="Players on the pitch"

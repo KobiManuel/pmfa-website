@@ -9,6 +9,7 @@ const Footer = () => {
   const { pathname } = useLocation();
   const isFoundation = pathname === "/foundation";
   const isProject2029 = pathname === "/project-2029";
+  const footerEmail = isFoundation ? "info@tpmffoundation.com" : "info@pmfa.club";
 
   return (
     <footer className="bg-black pt-[62.54px] pb-[33.67px] flex justify-center items-center max-[768px]:pt-10 max-[480px]:pt-8">
@@ -77,43 +78,51 @@ const Footer = () => {
                 Company
               </p>
               {[
-                {
-                  label: "Our Impact",
-                  to: "takes us to in the press section / media page",
-                },
-                { label: "Careers", to: "/leads to mail" },
-                { label: "Media Kit", to: "/leads to mail" },
-                { label: "Privacy Policy", to: "/add a privacy policy page" },
-                { label: "Partners", to: "/leads to mail" },
-              ].map(({ label, to }) => (
-                <li key={label}>
-                  <Link
-                    to={to}
-                    className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+                { label: "Our Impact", to: "/media" },
+                { label: "Careers", to: `mailto:${footerEmail}` },
+                { label: "Media Kit", to: `mailto:${footerEmail}` },
+                { label: "Privacy Policy", to: "/privacy-policy" },
+                { label: "Partners", to: `mailto:${footerEmail}` },
+              ].map(({ label, to }) =>
+                to.startsWith("mailto:") ? (
+                  <li key={label}>
+                    <a
+                      href={to}
+                      className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={label}>
+                    <Link
+                      to={to}
+                      className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
             <ul className="flex flex-col text-[16px] leading-[34px]">
               <p className="text-primary tracking-[11%] font-extrabold">
                 Resources
               </p>
               {[
-                { label: "Scout Portal", to: "/to mail" },
-                { label: "Coach Portal", to: "/ to mail" },
-                { label: "Parent Guide", to: "/ to mail" },
-                { label: "Training Schedule", to: "/ to mail" },
-                { label: "Contact Us", to: "/ to mail" },
+                { label: "Scout Portal", to: `mailto:${footerEmail}` },
+                { label: "Coach Portal", to: `mailto:${footerEmail}` },
+                { label: "Parent Guide", to: `mailto:${footerEmail}` },
+                { label: "Training Schedule", to: `mailto:${footerEmail}` },
+                { label: "Contact Us", to: `mailto:${footerEmail}` },
               ].map(({ label, to }) => (
                 <li key={label}>
-                  <Link
-                    to={to}
+                  <a
+                    href={to}
                     className="font-medium tracking-[2%] text-[#8F8F8F] cursor-pointer hover:text-white transition-colors"
                   >
                     {label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -124,7 +133,7 @@ const Footer = () => {
         <div className="flex justify-between items-center w-full max-[768px]:flex-col max-[768px]:items-start max-[768px]:gap-5 max-[480px]:gap-4">
           <p className="text-[#6E6E6E] text-[16px] leading-[28px] font-inter max-[480px]:text-[13px] max-[480px]:leading-[22px]">
             © 2026 PMF Academy. All rights reserved. Registered in Nigeria. |{" "}
-            {isFoundation ? "info@tpmffoundation.com" : "info@pmfa.club"}
+            {footerEmail}
           </p>
           <div className="flex items-center gap-[30.17px] max-[480px]:gap-5">
             <a href={SOCIAL_HREF} target="_blank" rel="noopener noreferrer">

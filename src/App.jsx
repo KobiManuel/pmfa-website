@@ -8,6 +8,7 @@ import Programs from "./Programs/Main";
 import Media from "./Media/Main";
 import Foundation from "./Foundation/Main";
 import Project2029 from "./Project2029/main";
+import PrivacyPolicy from "./PrivacyPolicy/Main";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/project-2029" element={<Project2029 />} />
         <Route path="/foundation" element={<Foundation />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </BrowserRouter>
